@@ -8,7 +8,7 @@ const routes : Routes = [
   // { path: 'dashboard', loadChildren: () => import('./questions/questions.module').then(m => m.QuestionsModule), },
 ]
 
-@NgModule({
+@NgModule({ 
   imports: [
     RouterModule.forRoot(routes)
   ],
