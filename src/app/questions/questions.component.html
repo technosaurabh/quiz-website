@@ -15,10 +15,24 @@
                 <!-- <ol> -->
                     <!-- <tr class="table-row" *ngFor="let data of collectionOfData"> -->
                         <!-- <input type="radio"> -->
-                        <ol>
+
+                        <ol >
+                            <li *ngFor="let data of collectionOfData">
+                                {{data.question}}
+                        
+                                <ul>
+                                    <li>{{data.option1}}</li>
+                                    <li>{{data.option2}}</li>
+                                    <li>{{data.option3}}</li>
+                                    <li>{{data.option4}}</li>
+
+                  </ul>
+                  </li>
+                  </ol>
+                        <!-- <ol>
                             <li  *ngFor="let data of collectionOfData">{{data?.question}}</li>
                             
-                        </ol>
+                        </ol> -->
 
                         <!-- <td><input type="radio" [value]="data?.options"></td> -->
 
@@ -29,7 +43,7 @@
         </div>
     </div>
     <br>
-    <div ><button class="btn">Submit</button></div>
+    <div ><button class="btn" (click)="onSubmit()">Submit</button></div>
 </div>
 </div>
 
