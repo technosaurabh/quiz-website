@@ -1,5 +1,61 @@
-<p>questions works!</p>
-<h1>hey i am saurabh</h1>
+<div class="outerContainear">
+    <div class="innearContainear">
+        <div><h1 style="  font-size: 30px;">Welcome to Quize</h1></div>
+    </div>
+    <br>
+    <div class="innearContainear1">
+    <div class="innearContainear2">
+        <div class="div1">
+            <h4>You have select only one out of 4. Best of Luck</h4>
+        </div>
+        <div class="div2">
+            <h5>Question</h5>
+            <form action="">
+
+                <!-- <ol> -->
+                    <!-- <tr class="table-row" *ngFor="let data of collectionOfData"> -->
+                        <!-- <input type="radio"> -->
+                        <ol>
+                            <li  *ngFor="let data of collectionOfData">{{data?.question}}</li>
+                            
+                        </ol>
+
+                        <!-- <td><input type="radio" [value]="data?.options"></td> -->
+
+                    <!-- </tr> -->
+                <!-- </ol> -->
+            </form>
+
+        </div>
+    </div>
+    <br>
+    <div ><button class="btn">Submit</button></div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- <form action="">
+  
+<ul>
+    <input type="radio">
+    <tr class="table-row" *ngFor="let data of collectionOfData">
+        <input type="radio" >
+        <td>{{data?.question}}</td>
+        <td><input type="radio" [value]="data?.options" ></td>
+       
+    </tr>
+
+</ul>
+</form>
+ -->
 
 
 <router-outlet></router-outlet>
