@@ -5,16 +5,7 @@ import {  Routes, RouterModule} from '@angular/router';
 
 
 const routes : Routes = [
-  // { path: 'questions', component: QuestionsComponent },
-  {
-    path: '', redirectTo: 'questions', pathMatch: 'full'
-  },
-  {
-    path: 'questions',
-    component : QuestionsComponent
-  },
-
-  
+  { path: 'question', component: QuestionsComponent }
 ]
 
 
