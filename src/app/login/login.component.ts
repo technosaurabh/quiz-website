@@ -33,10 +33,10 @@ export class LoginComponent implements OnInit {
 
   onSubmit(){
     if(this.email == "dahakekalyan75112@gmail.com" && this.password == 1234){
-      alert("login");
-      this.router.navigateByUrl('/questions')
+      // alert("login");
+      this.router.navigateByUrl('/question')
     }else{
-      
+
     }
   }
 }
